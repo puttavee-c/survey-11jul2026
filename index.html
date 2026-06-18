@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Pre-Survey — Advisory Board 11 Jul 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bb:#10384F;--bg:#89D329;--bl:#F4F9FB;--ba:#00617F;--bd:#D0DCE2;--tx:#1a1a1a;--mu:#5a6a73}
+*{box-sizing:border-box}
+body{font-family:'Noto Sans Thai','Calibri','Segoe UI',Arial,sans-serif;background:var(--bl);color:var(--tx);margin:0;padding:0;line-height:1.6}
+.ctr{max-width:960px;margin:0 auto;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.hdr{background:linear-gradient(135deg,var(--bb) 0%,var(--ba) 100%);color:#fff;padding:40px 50px 30px}
+.hdr .badge{display:inline-block;background:var(--bg);color:var(--bb);padding:4px 12px;font-weight:700;font-size:12px;letter-spacing:1px;border-radius:3px;margin-bottom:15px}
+.hdr h1{margin:0 0 8px;font-size:28px;font-weight:600}
+.hdr .sub{font-size:15px;opacity:.9;margin-bottom:15px}
+.hdr .meta{font-size:13px;display:flex;gap:25px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.2);padding-top:15px;margin-top:10px}
+.hdr .meta span strong{color:var(--bg)}
+.intro{padding:25px 50px;background:#fafbfc;border-bottom:1px solid var(--bd);font-size:14px;color:var(--mu)}
+.intro p{margin:0 0 8px}
+.comp{margin-top:12px;padding:10px 14px;background:#fff4e0;border-left:3px solid #e8a317;font-size:13px;color:#5a4300}
+.sec{padding:30px 50px 10px;border-bottom:1px solid var(--bd)}
+.st{font-size:13px;font-weight:700;letter-spacing:1.5px;color:var(--ba);text-transform:uppercase;margin-bottom:5px}
+.sd{font-size:13px;color:var(--mu);margin-bottom:18px}
+.q{margin-bottom:28px;padding:20px 22px;background:#fafbfc;border:1px solid var(--bd);border-radius:6px;border-left:4px solid var(--bg)}
+.ql{display:inline-block;background:var(--bb);color:#fff;padding:3px 10px;font-weight:700;font-size:12px;border-radius:3px;margin-bottom:10px}
+.qt{font-size:15px;font-weight:600;color:var(--tx);margin-bottom:6px}
+.qh{font-size:12px;color:var(--mu);font-style:italic;margin-bottom:14px}
+.dm{width:100%;border-collapse:collapse;margin-top:10px;background:#fff;border:1px solid var(--bd);border-radius:6px;overflow:hidden;font-size:13px}
+.dm th{background:var(--bb);color:#fff;padding:10px 8px;text-align:center;font-size:12px;font-weight:700}
+.dm th.ic{text-align:left;padding-left:14px}
+.dm td{padding:10px 6px;border-bottom:1px solid var(--bd);border-right:1px solid var(--bd);vertical-align:middle}
+.dm tr:last-child td{border-bottom:none}
+.dm td:last-child{border-right:none}
+.dm td.ind{background:#eaf4f8;font-weight:700;color:var(--bb);padding-left:14px}
+.dm td.sum{background:#f4f9fb;font-weight:700;text-align:center;color:var(--ba)}
+.cs{display:flex;flex-direction:column;align-items:center;gap:4px}
+.cs input[type=range]{width:100%;accent-color:var(--ba)}
+.cv{display:inline-block;background:var(--ba);color:#fff;padding:1px 8px;border-radius:10px;font-weight:600;font-size:11px;min-width:40px;text-align:center}
+.mn{font-size:11px;color:var(--mu);margin-top:8px;font-style:italic}
+.sw{margin:12px 0}
+.sw input[type=range]{width:100%;accent-color:var(--ba)}
+.sl{display:flex;justify-content:space-between;font-size:11px;color:var(--mu);margin-top:2px}
+.sv{display:inline-block;background:var(--ba);color:#fff;padding:2px 12px;border-radius:12px;font-weight:600;font-size:13px;min-width:50px;text-align:center}
+.opts{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.opts label{padding:8px 12px;border:1px solid var(--bd);border-radius:4px;background:#fff;cursor:pointer;font-size:14px;transition:all .15s;display:flex;align-items:center;gap:10px}
+.opts label:hover{border-color:var(--ba);background:#f0f7fa}
+.opts input[type=radio],.opts input[type=checkbox]{accent-color:var(--ba)}
+.lik{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:8px}
+.lik label{text-align:center;padding:10px 4px;border:1px solid var(--bd);border-radius:4px;background:#fff;cursor:pointer;font-size:12px;transition:all .15s}
+.lik label:hover{border-color:var(--ba);background:#f0f7fa}
+.lik label input{display:block;margin:0 auto 4px;accent-color:var(--ba)}
+.ln{font-size:16px;font-weight:700;color:var(--bb);display:block;margin-bottom:2px}
+textarea,input[type=text]{width:100%;padding:8px 10px;border:1px solid var(--bd);border-radius:4px;font-family:inherit;font-size:13px;resize:vertical;margin-top:6px}
+textarea:focus,input[type=text]:focus{outline:none;border-color:var(--ba);box-shadow:0 0 0 2px rgba(0,97,127,.15)}
+.rl{list-style:none;padding:0;margin:10px 0 0}
+.rl li{padding:8px 10px 8px 70px;border:1px solid var(--bd);border-radius:4px;background:#fff;margin-bottom:5px;font-size:13px;position:relative}
+.rl select{position:absolute;left:8px;top:50%;transform:translateY(-50%);width:55px;padding:4px;border:1px solid var(--bd);border-radius:3px;font-size:12px;background:#fff}
+.cb{margin-top:15px;padding:14px 18px;background:#eaf4f8;border-left:4px solid var(--ba);border-radius:0 4px 4px 0}
+.cb .qi{display:inline-block;background:var(--ba);color:#fff;padding:3px 10px;font-weight:700;font-size:12px;border-radius:3px;margin-bottom:8px}
+.cb .qt{font-size:14px;margin-bottom:6px}
+.fto{display:none;margin-top:8px}
+.ftr{background:var(--bb);color:#fff;padding:25px 50px;text-align:center;font-size:13px}
+.ftr .sbm{background:var(--bg);color:var(--bb);padding:12px 40px;font-size:15px;font-weight:700;border:none;border-radius:4px;cursor:pointer;letter-spacing:1px;margin-bottom:12px;transition:all .2s}
+.ftr .sbm:hover{background:#9ee03e}
+.ftr .sbm:disabled{background:#ccc;cursor:not-allowed}
+.ftr .nt{font-size:12px;opacity:.8}
+.sb{background:#d4edda;color:#155724;border:1px solid #c3e6cb;border-radius:8px;padding:40px;text-align:center;margin:40px 50px;font-size:16px}
+.sb h2{color:#155724;margin-bottom:10px}
+.ftr .pbtn{background:transparent;color:#fff;padding:12px 30px;font-size:15px;font-weight:700;border:2px solid #fff;border-radius:4px;cursor:pointer;letter-spacing:1px;margin-bottom:12px;margin-right:12px;transition:all .2s}
+.ftr .pbtn:hover{background:rgba(255,255,255,.15)}
+@media print{.ftr .pbtn{display:none}body{background:#fff}.ctr{box-shadow:none}.q{break-inside:avoid}.ftr .sbm{display:none}}
+
+    .ni{width:58px;text-align:center;border:1px solid var(--bd);border-radius:4px;
+        font-size:12px;padding:2px 4px;margin-left:6px;color:var(--tx);
+        background:var(--bg);outline:none;appearance:textfield;-moz-appearance:textfield;}
+    .ni::-webkit-inner-spin-button,.ni::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
+    .ni:focus{border-color:var(--pr);}
+    .sl .ni{vertical-align:middle;}
+  </style>
+</head>
+<body>
+<div class="ctr">
+  <div class="hdr">
+    <span class="badge">แบบสำรวจก่อนประชุม &nbsp;•&nbsp; 12 ข้อ &nbsp;•&nbsp; ประมาณ 10 นาที</span>
+    <h1>Acceler8 to 24 — Advisory Board Meeting</h1>
+    <div class="sub">Innovating Durability &amp; Differentiating Care with High Molar Dose Anti-VEGF in nAMD, DME &amp; RVO</div>
+    <div class="meta">
+      <span><strong>วันที่</strong>&nbsp; วันเสาร์ที่ 11 กรกฎาคม 2569</span>
+      <span><strong>สถานที่</strong>&nbsp; Eastin Grand Hotel Phayathai</span>
+      <span><strong>เวลา</strong>&nbsp; 15:00 – 18:00 น.</span>
+      <span><strong>กำหนดส่ง</strong>&nbsp; 8 กรกฎาคม 2569</span>
+    </div>
+  </div>
+  <div class="intro">
+    <p>เรียน Advisory board member,</p>
+    <p>ขอขอบคุณที่เข้าร่วมการประชุม Advisory Board Meeting ในวันเสาร์ที่ <strong>11 กรกฎาคม 2569</strong> แบบสำรวจก่อนประชุมฉบับสั้นนี้ใช้เวลาประมาณ <strong>10 นาที</strong> และจะเป็นแนวทางสำหรับการอภิปรายในที่ประชุม — คำตอบของท่านจะถูกนำเสนอ (ในรูปแบบรวมและไม่ระบุตัวตน) โดยประธานเพื่อเปิดประเด็นในแต่ละช่วงการอภิปรายทั้ง 3 ช่วง</p>
+    <div class="comp"><strong>Compliance note:</strong> คำตอบจะถูกใช้เพื่อการอภิปรายใน Advisory Board เท่านั้น ข้อมูลทั้งหมดจะถูกรวบรวมและไม่ระบุตัวตนก่อนนำเสนอ จะไม่มีการระบุว่าคำตอบใดเป็นของผู้ใด</div>
+  </div>
+  <div class="sec" id="sa">
+    <div class="st">Section A — ภาพรวมการให้ยาในปัจจุบัน (Current Dosing Landscape)</div>
+    <div class="sd">ระบุสัดส่วนการให้ยาจริงของท่านใน retinal indication ทั้ง 3 ข้อบ่งชี้</div>
+    <div class="q">
+      <span class="ql">S1</span>
+      <div class="qt">ในเวชปฏิบัติปัจจุบันของท่าน ผู้ป่วยของท่านกี่เปอร์เซ็นต์ที่ได้รับการรักษาใน dosing interval แต่ละช่วง — แยกตาม <strong>indication</strong>?</div>
+      <div class="qh">กรอกแถวละหนึ่ง indication แต่ละแถวควรรวมได้ 100%</div>
+      <table class="dm">
+        <thead><tr>
+          <th class="ic">Indication</th>
+          <th>q4–&lt;q8w<br><span style="font-weight:400;opacity:.85">(intensive)</span></th>
+          <th>q8–q12w<br><span style="font-weight:400;opacity:.85">(standard)</span></th>
+          <th>q13–q16w<br><span style="font-weight:400;opacity:.85">(extended)</span></th>
+          <th>&gt;q16w<br><span style="font-weight:400;opacity:.85">(q20–q24w)</span></th>
+          <th>รวม</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="ind">nAMD</td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="25" data-row="namd" oninput="uc(this)"><span class="cv">25%</span><input type="number" class="ni" min="0" max="100" value="25" data-row="namd" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="50" data-row="namd" oninput="uc(this)"><span class="cv">50%</span><input type="number" class="ni" min="0" max="100" value="50" data-row="namd" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="20" data-row="namd" oninput="uc(this)"><span class="cv">20%</span><input type="number" class="ni" min="0" max="100" value="20" data-row="namd" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="5" data-row="namd" oninput="uc(this)"><span class="cv">5%</span><input type="number" class="ni" min="0" max="100" value="5" data-row="namd" oninput="ucn(this)"></div></td>
+            <td class="sum" id="sum-namd">100%</td></tr>
+          <tr><td class="ind">DME</td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="30" data-row="dme" oninput="uc(this)"><span class="cv">30%</span><input type="number" class="ni" min="0" max="100" value="30" data-row="dme" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="50" data-row="dme" oninput="uc(this)"><span class="cv">50%</span><input type="number" class="ni" min="0" max="100" value="50" data-row="dme" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="15" data-row="dme" oninput="uc(this)"><span class="cv">15%</span><input type="number" class="ni" min="0" max="100" value="15" data-row="dme" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="5" data-row="dme" oninput="uc(this)"><span class="cv">5%</span><input type="number" class="ni" min="0" max="100" value="5" data-row="dme" oninput="ucn(this)"></div></td>
+            <td class="sum" id="sum-dme">100%</td></tr>
+          <tr><td class="ind">RVO</td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="40" data-row="rvo" oninput="uc(this)"><span class="cv">40%</span><input type="number" class="ni" min="0" max="100" value="40" data-row="rvo" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="45" data-row="rvo" oninput="uc(this)"><span class="cv">45%</span><input type="number" class="ni" min="0" max="100" value="45" data-row="rvo" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="10" data-row="rvo" oninput="uc(this)"><span class="cv">10%</span><input type="number" class="ni" min="0" max="100" value="10" data-row="rvo" oninput="ucn(this)"></div></td>
+            <td><div class="cs"><input type="range" min="0" max="100" value="5" data-row="rvo" oninput="uc(this)"><span class="cv">5%</span><input type="number" class="ni" min="0" max="100" value="5" data-row="rvo" oninput="ucn(this)"></div></td>
+            <td class="sum" id="sum-rvo">100%</td></tr>
+        </tbody>
+      </table>
+      <div class="mn">Tip: แต่ละแถวควรรวมได้ 100% การประมาณคร่าวๆ ก็เพียงพอ</div>
+    </div>
+  </div>
+  <div class="sec" id="sb">
+    <div class="st">Section B — เจาะลึก RVO</div>
+    <div class="sd">ส่วนเฉพาะเกี่ยวกับ indication ใหม่ใน RVO</div>
+    <div class="q">
+      <span class="ql">S2</span>
+      <div class="qt">สำหรับผู้ป่วย RVO กี่เปอร์เซ็นต์ที่ได้รับ <strong>branded anti-VEGFs</strong> (เทียบกับ Anti-VEGFs ทั้งหมดซึ่งรวม bevacizumab)?</div>
+      <div class="sw">
+        <input type="range" min="0" max="100" value="40" id="s2-slider" oninput="s2sync(this)">
+        <div class="sl"><span>0%</span><span class="sv">40%</span><input type="number" class="ni" min="0" max="100" value="40" id="s2-num" oninput="s2nsync(this)"><span>100%</span></div>
+      </div>
+    </div>
+    <div class="q">
+      <span class="ql">S3</span>
+      <div class="qt">ท่านคิดว่าผลการศึกษา QUASAR สามารถนำมา<strong>ประยุกต์ใช้</strong>กับผู้ป่วย RVO ในประเทศไทยได้มากน้อยเพียงใด?</div>
+      <div class="lik">
+        <label><input type="radio" name="s3" value="1"><span class="ln">1</span>ไม่สามารถนำมาใช้ได้</label>
+        <label><input type="radio" name="s3" value="2"><span class="ln">2</span>เล็กน้อย</label>
+        <label><input type="radio" name="s3" value="3"><span class="ln">3</span>ปานกลาง</label>
+        <label><input type="radio" name="s3" value="4"><span class="ln">4</span>ค่อนข้างมาก</label>
+        <label><input type="radio" name="s3" value="5"><span class="ln">5</span>นำมาใช้ได้อย่างเต็มที่</label>
+      </div>
+      <textarea rows="2" id="s3-reason" placeholder="เหตุผลสั้นๆ หนึ่งประโยค (Optional)"></textarea>
+    </div>
+    <div class="q">
+      <span class="ql">S4</span>
+      <div class="qt">จากการทบทวนข้อมูล <strong>QUASAR</strong> ก่อนการประชุม กรุณาระบุ:</div>
+      <div class="qh">อย่างละหนึ่งประโยค</div>
+      <div style="margin-top:12px">
+        <label style="display:block;font-weight:600;font-size:13px;color:var(--bb);margin-bottom:4px">&#9312; จุดแข็งหลักหนึ่งข้อของ aflibercept 8 mg สำหรับ <strong>BRVO / CRVO</strong>:</label>
+        <textarea rows="2" id="s4-strength" placeholder="เช่น Robust BCVA gain vs 2 mg..."></textarea>
+      </div>
+      <div style="margin-top:14px">
+        <label style="display:block;font-weight:600;font-size:13px;color:var(--bb);margin-bottom:4px">&#9313; ข้อจำกัดหลักหนึ่งข้อที่ท่านต้องการ<strong>อภิปราย</strong>:</label>
+        <textarea rows="2" id="s4-limitation" placeholder="เช่น Generalisability to ischaemic CRVO..."></textarea>
+      </div>
+    </div>
+    <div class="q">
+      <span class="ql">S5</span>
+      <div class="qt">สำหรับผู้ป่วย <strong>RVO</strong> ที่ปรับเปลี่ยนยาจาก <strong>bevacizumab</strong> — <u>branded anti-VEGF</u> ตัวใดเป็นตัวเลือกถัดไป?</div>
+      <div class="opts">
+        <label><input type="radio" name="s5" value="Aflibercept 2 mg"> Aflibercept 2 mg</label>
+        <label><input type="radio" name="s5" value="Ranibizumab"> Ranibizumab</label>
+        <label><input type="radio" name="s5" value="Faricimab"> Faricimab</label>
+        <label><input type="radio" name="s5" value="Brolucizumab"> Brolucizumab</label>
+        <label><input type="radio" name="s5" value="ไม่มีตัวเลือกที่ชัดเจน"> ไม่มีตัวเลือกที่ชัดเจน — พิจารณาเป็นรายๆ ไป</label>
+      </div>
+      <div class="cb">
+        <span class="qi">S6a</span>
+        <div class="qt">เมื่อ aflibercept 8 mg ได้รับการอนุมัติสำหรับ RVO แล้ว — สำหรับผู้ป่วย <strong>BRVO</strong> ที่ปรับเปลี่ยนจาก bevacizumab ท่านถือว่าเป็น<strong>ตัวเลือกแรก</strong>หรือไม่?</div>
+        <div class="opts" style="margin-top:10px">
+          <label><input type="radio" name="s6a" value="ใช่" onchange="tf('s6a')"> ใช่ — aflibercept 8 mg เป็นตัวเลือกแรกของผมสำหรับ BRVO หลัง bevacizumab</label>
+          <label><input type="radio" name="s6a" value="ไม่" onchange="tf('s6a')"> ไม่ — ผมยังคงเลือกตัวเลือกเดิม (จาก S5)</label>
+          <label><input type="radio" name="s6a" value="other" onchange="tf('s6a')"> เหตุผลอื่นๆ</label>
+        </div>
+        <input type="text" id="freetext-s6a" class="fto" placeholder="กรุณาระบุเหตุผล...">
+        <div style="margin-top:14px;padding-top:14px;border-top:1px dashed var(--ba)">
+          <span class="qi">S6b</span>
+          <div class="qt">สำหรับผู้ป่วย <strong>CRVO</strong> ที่ปรับเปลี่ยนจาก bevacizumab — aflibercept 8 mg เป็น<strong>ตัวเลือกแรก</strong>ของท่านหรือไม่?</div>
+          <div class="opts" style="margin-top:10px">
+            <label><input type="radio" name="s6b" value="ใช่" onchange="tf('s6b')"> ใช่ — aflibercept 8 mg เป็นตัวเลือกแรกของผมสำหรับ CRVO หลัง bevacizumab</label>
+            <label><input type="radio" name="s6b" value="ไม่" onchange="tf('s6b')"> ไม่ — ผมยังคงเลือกตัวเลือกเดิม (จาก S5)</label>
+            <label><input type="radio" name="s6b" value="other" onchange="tf('s6b')"> เหตุผลอื่นๆ</label>
+          </div>
+          <input type="text" id="freetext-s6b" class="fto" placeholder="กรุณาระบุเหตุผล...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sec" id="sc">
+    <div class="st">Section C — เกณฑ์การตัดสินใจแบบ Treat-and-Extend</div>
+    <div class="sd">เกณฑ์ส่วนตัวของท่านในการขยาย dosing interval</div>
+    <div class="q">
+      <span class="ql">S7</span>
+      <div class="qt">เมื่อขยาย T&amp;E interval ท่านใช้เกณฑ์ทางคลินิก <strong>2 ข้อใด</strong>เป็นหลัก?</div>
+      <div class="qh">เลือก 2 ข้อ</div>
+      <div class="opts" style="margin-top:10px">
+        <label><input type="checkbox" name="s7" value="Dry macula on OCT (no IRF / no SRF)"> Dry macula on OCT (no IRF / no SRF)</label>
+        <label><input type="checkbox" name="s7" value="Stable BCVA over 2+ consecutive visits"> Stable BCVA over 2+ consecutive visits</label>
+        <label><input type="checkbox" name="s7" value="Absence of fluid for 2+ consecutive visits"> Absence of fluid for 2+ consecutive visits</label>
+        <label><input type="checkbox" name="s7" value="Normal IOP / absence of inflammation signs"> Normal IOP / absence of inflammation signs</label>
+        <label><input type="checkbox" name="s7" value="Patient-reported stability"> Patient-reported stability</label>
+        <label><input type="checkbox" name="s7" value="No recurrence at previous interval"> No recurrence at the previous visit's interval</label>
+        <label><input type="checkbox" name="s7" value="อื่นๆ"> อื่นๆ (ระบุด้านล่าง)</label>
+      </div>
+      <input type="text" id="s7-other" placeholder="เกณฑ์อื่น (Optional)">
+    </div>
+  </div>
+  <div class="sec" id="sd">
+    <div class="st">Section D — ความเห็นเกี่ยวกับการเปลี่ยนผ่านและ Clinical Attributes</div>
+    <div class="sd">มุมมองของท่านเกี่ยวกับการเปลี่ยนจาก 2 mg → 8 mg</div>
+    <div class="q">
+      <span class="ql">S8a</span>
+      <div class="qt">ท่านเห็นด้วยมากน้อยเพียงใดว่าหลักฐานจากการศึกษา <strong>PULSAR</strong> เพียงพอที่จะให้ aflibercept 8 mg ทดแทน 2 mg ใน <strong>nAMD</strong>?</div>
+      <div class="lik">
+        <label><input type="radio" name="s8a" value="1"><span class="ln">1</span>ไม่เห็นด้วยอย่างยิ่ง</label>
+        <label><input type="radio" name="s8a" value="2"><span class="ln">2</span>ไม่เห็นด้วย</label>
+        <label><input type="radio" name="s8a" value="3"><span class="ln">3</span>เป็นกลาง</label>
+        <label><input type="radio" name="s8a" value="4"><span class="ln">4</span>เห็นด้วย</label>
+        <label><input type="radio" name="s8a" value="5"><span class="ln">5</span>เห็นด้วยอย่างยิ่ง</label>
+      </div>
+      <textarea rows="2" id="s8a-reason" placeholder="เหตุผลหนึ่งประโยค หากคำตอบต่ำกว่า 4 (Optional)"></textarea>
+    </div>
+    <div class="q">
+      <span class="ql">S8b</span>
+      <div class="qt">ท่านเห็นด้วยมากน้อยเพียงใดว่าหลักฐานจากการศึกษา <strong>PHOTON</strong> เพียงพอที่จะให้ aflibercept 8 mg ทดแทน 2 mg ใน <strong>DME</strong>?</div>
+      <div class="lik">
+        <label><input type="radio" name="s8b" value="1"><span class="ln">1</span>ไม่เห็นด้วยอย่างยิ่ง</label>
+        <label><input type="radio" name="s8b" value="2"><span class="ln">2</span>ไม่เห็นด้วย</label>
+        <label><input type="radio" name="s8b" value="3"><span class="ln">3</span>เป็นกลาง</label>
+        <label><input type="radio" name="s8b" value="4"><span class="ln">4</span>เห็นด้วย</label>
+        <label><input type="radio" name="s8b" value="5"><span class="ln">5</span>เห็นด้วยอย่างยิ่ง</label>
+      </div>
+      <textarea rows="2" id="s8b-reason" placeholder="เหตุผลหนึ่งประโยค หากคำตอบต่ำกว่า 4 (Optional)"></textarea>
+    </div>
+    <div class="q">
+      <span class="ql">S8c</span>
+      <div class="qt">ท่านเห็นด้วยมากน้อยเพียงใดว่าหลักฐานจากการศึกษา <strong>QUASAR</strong> เพียงพอที่จะให้ aflibercept 8 mg ทดแทน 2 mg ใน <strong>RVO</strong>?</div>
+      <div class="lik">
+        <label><input type="radio" name="s8c" value="1"><span class="ln">1</span>ไม่เห็นด้วยอย่างยิ่ง</label>
+        <label><input type="radio" name="s8c" value="2"><span class="ln">2</span>ไม่เห็นด้วย</label>
+        <label><input type="radio" name="s8c" value="3"><span class="ln">3</span>เป็นกลาง</label>
+        <label><input type="radio" name="s8c" value="4"><span class="ln">4</span>เห็นด้วย</label>
+        <label><input type="radio" name="s8c" value="5"><span class="ln">5</span>เห็นด้วยอย่างยิ่ง</label>
+      </div>
+      <textarea rows="2" id="s8c-reason" placeholder="เหตุผลหนึ่งประโยค หากคำตอบต่ำกว่า 4 (Optional)"></textarea>
+    </div>
+    <div class="q">
+      <span class="ql">S9a</span>
+      <div class="qt">สำหรับผู้ป่วย <strong>nAMD</strong> สิทธิ์ CSMBS กรุณาจัดอันดับ <strong>clinical attributes 3 อันดับแรก</strong></div>
+      <ol class="rl" id="rank-s9a">
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> ครอบคลุมทุก indication (nAMD + DME + RVO ในยาตัวเดียว)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Maximum achievable dosing interval (q20w–q24w)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Minimum interval flexibility (สามารถ rescue ที่ q4w)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> การศึกษา efficacy ในระยะยาว (เช่น 156 สัปดาห์จาก PULSAR)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Safety / tolerability profile (IOI, IOP)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Anatomic drying response (OCT fluid resolution)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> ความสม่ำเสมอของการตอบสนองใน subgroups ต่างๆ</li>
+      </ol>
+    </div>
+    <div class="q">
+      <span class="ql">S9b</span>
+      <div class="qt">สำหรับผู้ป่วย <strong>DME</strong> สิทธิ์ CSMBS กรุณาจัดอันดับ <strong>clinical attributes 3 อันดับแรก</strong></div>
+      <ol class="rl" id="rank-s9b">
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> ครอบคลุมทุก indication (nAMD + DME + RVO ในยาตัวเดียว)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Dosing interval สูงสุดที่ทำได้ (q20w–q24w)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Minimum interval flexibility (สามารถ rescue ที่ q4w)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> การศึกษา efficacy ในระยะยาว (เช่น 156 สัปดาห์จาก PHOTON)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Safety / tolerability profile (IOI, IOP)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> การตอบสนองทาง anatomic drying (OCT fluid resolution)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> ความสม่ำเสมอของการตอบสนองใน subgroups ต่างๆ</li>
+      </ol>
+    </div>
+    <div class="q">
+      <span class="ql">S9c</span>
+      <div class="qt">สำหรับผู้ป่วย <strong>RVO</strong> สิทธิ์ CSMBS กรุณาจัดอันดับ <strong>clinical attributes 3 อันดับแรก</strong></div>
+      <ol class="rl" id="rank-s9c">
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> ครอบคลุมทุก indication (nAMD + DME + RVO ในยาตัวเดียว)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Maximum achievable dosing interval (q20w–q24w)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Minimum interval flexibility (สามารถ rescue ที่ q4w)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> การศึกษา efficacy ในระยะยาว (QUASAR)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> Safety / tolerability profile (IOI, IOP)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> การตอบสนองทาง anatomic drying (OCT fluid resolution)</li>
+        <li><select><option value=""></option><option>1</option><option>2</option><option>3</option></select> ความสม่ำเสมอของการตอบสนองใน subgroups ต่างๆ</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sec" id="se">
+    <div class="st">Section E — ความเห็นเปิด</div>
+    <div class="sd">ความเห็นของท่าน — หนึ่งประโยค</div>
+    <div class="q">
+      <span class="ql">S10</span>
+      <div class="qt">ในหนึ่งประโยค — ความต้องการที่ยังไม่ได้รับการตอบสนอง (<strong>unmet need</strong>) ที่ใหญ่ที่สุดในคลินิก retina ของท่านในปัจจุบัน ที่ anti-VEGF ตัวใหม่สามารถแก้ไขได้คืออะไร?</div>
+      <textarea rows="3" id="s10-unmet" placeholder="เขียนคำตอบของท่านที่นี่..."></textarea>
+    </div>
+  </div>
+  <div class="ftr" id="survey-footer">
+    <button class="pbtn" onclick="window.print()">&#128190; บันทึกเพื่อพิมพ์</button>
+    <button class="sbm" id="submit-btn" onclick="doSubmit()">ส่งแบบสำรวจก่อนประชุม</button>
+    <div class="nt">MA-AFL_8mg-TH-0103-2 (05/26)</div>
+  </div>
+</div>
+<script>
+function uc(s){
+  var v=parseInt(s.value);
+  s.nextElementSibling.textContent=v+'%';
+  var ni=s.parentElement.querySelector('.ni');
+  if(ni)ni.value=v;
+  var r=s.dataset.row;
+  var all=document.querySelectorAll('input[type="range"][data-row="'+r+'"]');
+  var t=0;all.forEach(function(x){t+=parseInt(x.value)});
+  var c=document.getElementById('sum-'+r);
+  c.textContent=t+'%';
+  if(t>105||t<95){c.style.color='#C8102E';c.style.background='#fdeaea'}
+  else{c.style.color='var(--ba)';c.style.background='#f4f9fb'}
+}
+function ucn(n){
+  var v=parseInt(n.value)||0;
+  if(v<0)v=0;if(v>100)v=100;n.value=v;
+  var p=n.parentElement;
+  var sl=p.querySelector('input[type="range"]');
+  var cv=p.querySelector('.cv');
+  if(sl)sl.value=v;
+  if(cv)cv.textContent=v+'%';
+  var r=n.dataset.row;
+  var all=document.querySelectorAll('input[type="range"][data-row="'+r+'"]');
+  var t=0;all.forEach(function(x){t+=parseInt(x.value)});
+  var c=document.getElementById('sum-'+r);
+  c.textContent=t+'%';
+  if(t>105||t<95){c.style.color='#C8102E';c.style.background='#fdeaea'}
+  else{c.style.color='var(--ba)';c.style.background='#f4f9fb'}
+}
+function tf(n){
+  var rs=document.getElementsByName(n);
+  var ft=document.getElementById('freetext-'+n);
+  var show=false;
+  for(var i=0;i<rs.length;i++){if(rs[i].checked&&rs[i].value==='other'){show=true;break}}
+  ft.style.display=show?'block':'none';
+  if(!show)ft.value='';
+}
+function gr(n){var r=document.querySelector('input[name="'+n+'"]:checked');return r?r.value:''}
+function gs(r){var s=document.querySelectorAll('input[type="range"][data-row="'+r+'"]');var v=[];s.forEach(function(x){v.push(parseInt(x.value))});return v}
+function gc(n){var b=document.querySelectorAll('input[name="'+n+'"]:checked');var v=[];b.forEach(function(x){v.push(x.value)});return v.join(', ')}
+function gk(id){var s=document.querySelectorAll('#'+id+' select');var p=[];s.forEach(function(x,i){if(x.value)p.push((i+1)+':'+x.value)});return p.join(', ')}
+
+function s2sync(el){
+  var v=parseInt(el.value);
+  el.nextElementSibling.querySelector('.sv').textContent=v+'%';
+  var ni=document.getElementById('s2-num');
+  if(ni)ni.value=v;
+}
+function s2nsync(el){
+  var v=parseInt(el.value)||0;
+  if(v<0)v=0;if(v>100)v=100;el.value=v;
+  var sl=document.getElementById('s2-slider');
+  if(sl)sl.value=v;
+  var sv=el.parentElement.querySelector('.sv');
+  if(sv)sv.textContent=v+'%';
+}
+
+var busy=false;
+function doSubmit(){
+  if(busy)return;
+  if(!confirm('ยืนยันการส่งแบบสำรวจหรือไม่?'))return;
+  busy=true;
+  var btn=document.getElementById('submit-btn');
+  btn.textContent='กำลังส่ง...';btn.disabled=true;
+  var nm=gs('namd'),dm=gs('dme'),rv=gs('rvo');
+  var d={
+    Title:new Date().toISOString(),
+    S1_nAMD_q4:nm[0],S1_nAMD_q8:nm[1],S1_nAMD_q13:nm[2],S1_nAMD_q16plus:nm[3],
+    S1_DME_q4:dm[0],S1_DME_q8:dm[1],S1_DME_q13:dm[2],S1_DME_q16plus:dm[3],
+    S1_RVO_q4:rv[0],S1_RVO_q8:rv[1],S1_RVO_q13:rv[2],S1_RVO_q16plus:rv[3],
+    S2_branded_pct:parseInt(document.getElementById('s2-slider').value),
+    S3_applicability:parseInt(gr('s3'))||0,
+    S3_reason:document.getElementById('s3-reason').value.trim(),
+    S4_strength:document.getElementById('s4-strength').value.trim(),
+    S4_limitation:document.getElementById('s4-limitation').value.trim(),
+    S5_preferred:gr('s5'),
+    S6a_BRVO:gr('s6a'),S6a_BRVO_other:document.getElementById('freetext-s6a').value.trim(),
+    S6b_CRVO:gr('s6b'),S6b_CRVO_other:document.getElementById('freetext-s6b').value.trim(),
+    S7_criteria:gc('s7'),S7_other:document.getElementById('s7-other').value.trim(),
+    S8a_PULSAR_nAMD:parseInt(gr('s8a'))||0,S8a_reason:document.getElementById('s8a-reason').value.trim(),
+    S8b_PHOTON_DME:parseInt(gr('s8b'))||0,S8b_reason:document.getElementById('s8b-reason').value.trim(),
+    S8c_QUASAR_RVO:parseInt(gr('s8c'))||0,S8c_reason:document.getElementById('s8c-reason').value.trim(),
+    S9a_nAMD_top3:gk('rank-s9a'),S9b_DME_top3:gk('rank-s9b'),S9c_RVO_top3:gk('rank-s9c'),
+    S10_unmet_need:document.getElementById('s10-unmet').value.trim()
+  };
+  var URL='https://df502657dcfb4824875489c1734771.18.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/636339ad280944a4b964b4d86ad6db55/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=bhgjR5ig_s8sI47ra8T41G197OB7aQdS6F4d3otbhxE';
+  fetch(URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d),mode:'cors'})
+  .then(function(r){
+    if(r.ok||r.status===202){
+      document.querySelectorAll('.sec').forEach(function(s){s.style.display='none'});
+      var intro=document.querySelector('.intro');if(intro)intro.style.display='none';
+      var f=document.getElementById('survey-footer');
+      f.innerHTML='<div class="sb"><h2>✅ ส่งแบบสำรวจเรียบร้อยแล้ว!</h2><p>ขอบคุณครับ — คำตอบของท่านจะเป็นแนวทางการอภิปรายสำหรับ advisor ทั้ง 12 ท่าน</p><p style="font-size:13px;color:#5a6a73;margin-top:15px">ท่านสามารถปิดหน้านี้ได้เลย</p></div>';
+      f.style.background='#fff';f.style.padding='0';
+      window.scrollTo({top:0,behavior:'smooth'});
+    }else{throw new Error('Status '+r.status)}
+  })
+  .catch(function(e){
+    alert('เกิดข้อผิดพลาด: '+e.message+'
+กรุณาลองอีกครั้ง');
+    btn.textContent='ส่งแบบสำรวจก่อนประชุม';btn.disabled=false;busy=false;
+  });
+}
+</script>
+</body>
+</html>
